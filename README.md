@@ -4,4 +4,4 @@ Only using HTML CSS
 
 # FIGMA DESIGN
 
-url: https://www.figma.com/design/Vyto82ebt8E0GoqBtpzGfS/02.-Education-Platform-Website--Easy-?node-id=0-1&p=f&t=vOFzPGi1fyeNd0E6-0
+url: https://www.figma.com/design/Zs7vjnMWc3jj09J94gr57L/01.-Real-Estate-Landing-Page--Easy---1-?node-id=0-1&p=f&t=xAdWd4j5k8pUg2P7-0
