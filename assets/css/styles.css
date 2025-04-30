@@ -38,12 +38,6 @@ a {
   text-decoration: none;
 }
 
-.content {
-  width: var(--width-desktop);
-  max-width: calc(100% - 48px);
-  margin: 0 auto;
-}
-
 .btn {
   display: inline-block;
   min-width: 98px;
@@ -115,6 +109,7 @@ a {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero .info {
@@ -162,7 +157,7 @@ a {
   padding: 42px 0;
 }
 
-.clients .row {
+.clients .clients-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -239,7 +234,7 @@ a {
   margin: 20px auto 0;
 }
 
-.guide .row {
+.guide .guide-row {
   margin-top: 70px;
   display: flex;
   align-items: center;
@@ -294,21 +289,21 @@ a {
   font-weight: 600;
 }
 
-.featured .content .row {
+.featured .featured-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.featured .row .desc {
+.featured .featured-row .desc {
   color: #5a6473;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.8;
 }
 
-.featured .row .link {
+.featured .featured-row .link {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -383,11 +378,11 @@ a {
   padding: 50px 0;
 }
 
-.stats .content {
-  --width-desktop: 1048px;
+.stats .container {
+  max-width: 1048px;
 }
 
-.stats .row,
+.stats .stats-row,
 .stats .list {
   display: flex;
   justify-content: space-between;
@@ -609,41 +604,41 @@ a {
   padding: 50px 0;
 }
 
-.footer .row {
+.footer .footer-row {
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
 }
 
-.footer .row:last-child {
+.footer .footer-row:last-child {
   margin-top: 80px;
 }
 
-.footer .row .list,
-.footer .row .contact {
+.footer .footer-row .list,
+.footer .footer-row .contact {
   width: 25%;
 }
 
-.footer .row .list li:not(:last-child) {
+.footer .footer-row .list li:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.footer .row .list li:first-child .sub-title,
-.footer .row .contact .sub-title {
+.footer .footer-row .list li:first-child .sub-title,
+.footer .footer-row .contact .sub-title {
   margin-bottom: 42px;
   color: #1c1c1d;
   font-size: 2rem;
   font-weight: 700;
 }
 
-.footer .row .list li a,
-.footer .row .contact .desc {
+.footer .footer-row .list li a,
+.footer .footer-row .contact .desc {
   color: #7a7a7e;
   font-size: 1.6rem;
   font-weight: 400;
 }
 
-.footer .row .contact .socials {
+.footer .footer-row .contact .socials {
   display: flex;
   align-items: center;
   gap: 14px;

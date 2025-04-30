@@ -1,0 +1,266 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+
+  .show-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991.98px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .menu-toggle {
+    width: 24px;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .mobile-header .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 1;
+  }
+
+  .mobile-header .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background: #fff;
+    padding: 40px;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 2;
+  }
+
+  .mobile-header .menu-drawer ul {
+    margin-top: 32px;
+  }
+
+  .mobile-header .menu-drawer li a {
+    display: block;
+    padding: 14px 0;
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+
+  .mobile-header .menu-drawer .close-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  .menu-checkbox:checked ~ .overlay {
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero .info {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero .desc {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clients .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .featured .title {
+    text-align: center;
+  }
+
+  .featured .featured-row .desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featured .featured-row .link {
+    display: none;
+  }
+
+  .featured .list .item {
+    flex: none;
+  }
+
+  .featured .list {
+    flex-wrap: wrap;
+  }
+
+  .featured .feature-mobile-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .stats .stats-row {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+
+  .stats .image-box,
+  .stats .info {
+    width: 100%;
+  }
+
+  .stats .info {
+    padding: 0;
+  }
+
+  .stats .info .title {
+    width: 70%;
+  }
+
+  .stats .info .desc {
+    width: 100%;
+  }
+
+  .stats .item .sub-title {
+    font-size: 5rem;
+  }
+
+  .stats .item .desc {
+    font-size: 1.6rem;
+  }
+
+  .subscription .box {
+    width: 100%;
+  }
+
+  .subscription .subcribe-img {
+    display: none;
+  }
+
+  .footer .footer-row {
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+
+  .footer .footer-row .list,
+  .footer .footer-row .contact {
+    width: 50%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+
+  .show-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  .hero {
+    height: calc(100vh - 84px);
+  }
+
+  .mobile-header .menu-drawer {
+    inset: 0;
+  }
+
+  .navbar .actions {
+    display: none;
+  }
+
+  .hero .title {
+    margin-top: 16px;
+    font-size: 5rem;
+  }
+
+  .clients .clients-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .clients .rating .stars {
+    display: none;
+  }
+
+  .guide .guide-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .featured .featured-row .desc {
+    text-align: center;
+  }
+
+  .featured .list .item {
+    flex-grow: 1;
+  }
+
+  .subscription .body {
+    min-height: auto;
+    padding: 32px;
+  }
+
+  .subscription .box .title {
+    font-size: 3rem;
+  }
+
+  .subscription .box .desc {
+    font-size: 1.4rem;
+  }
+
+  .stats .list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats .image-box .thumb {
+    width: 100%;
+  }
+
+  .stats .image-box .trend {
+    top: 20px;
+    left: 20px;
+    border-radius: 12px;
+  }
+
+  .footer .footer-row .list,
+  .footer .footer-row .contact {
+    width: 100%;
+  }
+}
